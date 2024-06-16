@@ -206,9 +206,9 @@ body {
         gap: 8px;
     }
 
-    .Project>img {
+    /* .Project>img {
         margin-top: 8px;
-    }
+    } */
 
     .titles {
         gap: 8px;
@@ -372,13 +372,13 @@ body {
     .outline {
         padding: 8px;
         border-radius: 20px;
-        margin-bottom: 30%;
     }
 
     .Project {
         padding: 24px;
         gap: 16px;
         border-radius: 12px;
+        height: fit-content;
     }
 
     .text {

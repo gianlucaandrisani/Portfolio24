@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #141312;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-family: "Inter", sans-serif;
+    background-image: none;
+}
+
+.back-button {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    border-radius: 50px;
+    border: 1px solid #464544;
+    background: #141312;
+    backdrop-filter: blur(40px);
+    transition: all 0.6s;
+}
+
+.back-button:hover {
+    border: 1px solid #4c4b4a;
+    background: #232220;
+    backdrop-filter: blur(40px);
+}
+
+.WholeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84%;
+    gap: 64px;
+}
+
+.Project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    margin-top: 8%;
+}
+
+.project-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.CoverTop {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.CoverTop>img {
+    width: 100%;
+    margin: auto;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Content>img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    width: 100%;
+}
+
+.wrapper {
+    padding: 16px;
+    border-radius: 56px;
+    background-color: #171615;
+    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04);
+    margin-bottom: 12%;
+    transition: all 0.3s;
+    height: fit-content;
+    animation: fadeInUp 1.2s ease-out both;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.project-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 40px;
+    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04);
+    background: #1A1918;
+    padding: 40px 60px 60px 60px;
+    box-shadow: 0px 0px 32px #00000008;
+}
+
+.snapshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 32px;
+}
+
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.Snapshot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.snapshot-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

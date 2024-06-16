@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: Poppins;
+}
+
+.BackButton {
+    position: absolute;
+    height: 100%;
+    top: 60px;
+    left: 150px;
+}
+
+.BackButton>a>img {
+    position: fixed;
+}
+
+.WholeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 1200px; */
+    width: 65%;
+    margin-top: 60px;
+    margin-bottom: 200px;
+}
+
+.Me {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.Me>img {
+    width: 100%;
+    position: absolute;
+    top: -550px;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
+}
+
+h1 {
+    font-size: 62px;
+    font-weight: 600;
+    margin: initial;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #9D9D9D;
+    text-align: left;
+}
+
+p {
+    font-size: 22px;
+}
+
+/* ______________________________________________________________________________________________________________________________________________________________ */
+
+
+
+@media (min-width: 525px) and (max-width: 1024px) {
+
+    .WholeContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* width: 1200px; */
+        width: 65%;
+        margin-top: 60px;
+        margin-bottom: 200px;
+    }
+    
+    .Me {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        width: 100%;
+        margin-right: 5%;
+    }
+    
+    .Me>img {
+        width: 100%;
+    }
+
+    .BackButton {
+        position: absolute;
+        height: 100%;
+        top: 50px;
+        left: 20px;
+    }
+
+    .BackButton>a>img {
+        position: fixed;
+    }
+   
+
+}
+
+/* ______________________________________________________________________________________________________________________________________________________________ */
+
+@media (min-width: 250px) and (max-width: 525px) {
+
+
+    .WholeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 1200px; */
+        width: 90%;
+    }
+    
+    .Me {
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        width: 0%;
+        margin-right: 5%;
+    }
+    
+    .Me>img {
+        width: 0%;
+    }
+
+
+    .BackButton {
+        position: absolute;
+        height: 100%;
+        top: 20px;
+        left: 20px;
+    }
+
+    .BackButton>a>img {
+        position: static;
+    }
+
+}

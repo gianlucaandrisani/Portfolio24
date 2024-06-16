@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #141312;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.Introduction {
+    margin-top: 8%;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.outline-intro {
+    margin: auto;
+    padding: 16px;
+    border-radius: 40px;
+    display: flex;
+    width: 80%;
+    height: 840px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.intro-content {
+    display: flex;
+    padding: 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    flex: 1 0 0;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 64px;
+    border-radius: 24px;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.intro-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    animation: fadeInUp 1.1s ease-out both;
+}
+
+.scroll-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    animation: fadeInUp 1.2s ease-out both;
+}
+
+#ProjectsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 12%;
+    gap: 80px;
+    animation: fadeInUp 1.2s ease-out both;
+}
+
+.outline {
+    padding: 16px;
+    border-radius: 56px;
+    background: linear-gradient(180deg, #171615 0%, #141312 92.04%);
+    /* box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04); */
+    width: 100%;
+    margin-bottom: 12%;
+    transition: all 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1.2s ease-out both;
+}
+
+.outline:hover {
+    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04), 0px 1px 20px #141312;
+}
+
+.glow-up {
+    background: radial-gradient(#ffffff4e 0%, #ffffff00 60%);
+    height: 1px;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    top: 0;
+    position: absolute;
+}
+
+.outline:hover .glow-up {
+    background: radial-gradient(#ffffff89 0%, #ffffff00 60%);
+}
+
+.outline:hover .glow-down {
+    background: radial-gradient(#ffffff 0%, #ffffff00 60%);
+}
+
+.glow-down {
+    background: radial-gradient(#ffffff7c 0%, #ffffff00 60%);
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.Project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #1A1918 0%, #141312 100%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 32px 40px;
+    border-radius: 40px;
+    transition: all 0.2s;
+    gap: 40px;
+    animation: fadeInUp 1.3s ease-out both;
+    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04), 0px 1px 20px #141312;
+}
+
+.Project>img {
+    width: 100%;
+    margin: auto;
+    transition: all 0.2s;
+    margin-top: 16px;
+}
+
+.Project:hover>img {
+    transform: scale(1.005);
+    box-shadow: 0px 4px 16px 3px #00000031;
+    border-radius: 24px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.titles {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.ProjectButton {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #141312;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #282828;
+    transition: all 0.6s;
+}
+
+@media (max-width: 1199px) {
+    .outline-intro {
+        padding: 12px;
+        height: 605px;
+    }
+
+    .intro-content {
+        padding: 46px;
+        gap: 46px;
+    }
+
+    .intro-titles {
+        gap: 12px;
+    }
+
+    .scroll-cta {
+        gap: 8px;
+    }
+
+    .outline {
+        padding: 12px;
+    }
+
+    .Project {
+        padding: 24px;
+        height: 654px;
+        gap: 8px;
+    }
+
+    .Project>img {
+        margin-top: 8px;
+    }
+
+    .titles {
+        gap: 8px;
+    }
+
+    .ProjectButton {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ProjectButton>svg {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    #ProjectsContainer {
+        padding: 0% 8%;
+    }
+
+    .outline-intro {
+        padding: 12px;
+    }
+
+    .intro-content {
+        padding: 20px;
+        gap: 46px;
+    }
+
+    .intro-titles {
+        gap: 12px;
+    }
+
+    .scroll-cta {
+        gap: 8px;
+    }
+
+    .outline {
+        margin-bottom: 10%;
+    }
+
+    .Project {
+        padding: 24px;
+        height: 600px;
+    }
+
+    .titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .titles>h2 {
+        line-height: 42px;
+    }
+
+    .titles>h4 {
+        line-height: 28px;
+    }
+
+    .Project>p {
+        line-height: 22px;
+    }
+
+    .ProjectButton {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ProjectButton>svg {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Introduction {
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
+    #ProjectsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        gap: 40px;
+    }
+
+    .outline-intro {
+        padding: 4px;
+        height: 605px;
+        width: 100%;
+    }
+
+    .intro-content {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .intro-titles {
+        gap: 4px;
+    }
+
+    .scroll-cta {
+        gap: 4px;
+    }
+
+    .outline {
+        padding: 12px;
+        border-radius: 28px;
+        margin-bottom: 40%;
+    }
+
+    .Project {
+        padding: 22px;
+        height: 420px;
+        gap: 16px;
+        border-radius: 16px;
+        align-self: center;
+    }
+
+    .titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .titles>h4 {
+        text-align: left;
+    }
+
+    .ProjectButton {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ProjectButton>svg {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    #ProjectsContainer {
+        gap: 16px;
+    }
+
+    .outline {
+        padding: 8px;
+        border-radius: 20px;
+        margin-bottom: 30%;
+    }
+
+    .Project {
+        padding: 24px;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .text {
+        gap: 12px;
+    }
+
+    .titles>h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .titles>h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .ProjectButton {
+        width: 28px;
+        height: 28px;
+    }
+
+    .ProjectButton>svg {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .intro-content {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .outline {
+        padding: 6px;
+        border-radius: 16px;
+        margin-bottom: 20%;
+    }
+
+    .Project {
+        padding: 12px;
+        height: 240px;
+        gap: 2px;
+        border-radius: 8px;
+    }
+
+    .titles>h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .titles>h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .ProjectButton {
+        width: 24px;
+        height: 24px;
+    }
+
+    .ProjectButton>svg {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

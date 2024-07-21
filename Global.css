@@ -32,6 +32,16 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  margin: 0;
+}
+
 h4 {
   color: #979797;
   font-family: "Inter", sans-serif;
@@ -52,6 +62,26 @@ p {
   margin: 0;
 }
 
+.p-md {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0;
+}
+
+li {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+}
+
 .p-2 {
   color: #979797;
   font-family: 'Inter', sans-serif;
@@ -63,7 +93,7 @@ p {
 }
 
 .h4-2 {
-  color: white;
+  color: #979797;
   font-family: "Inter", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -190,6 +220,30 @@ a {
   color: white;
 }
 
+.ofTheButton {
+  position: fixed;
+  bottom: 32px;
+  z-index: 100;
+}
+
+.button-proper {
+  background-color: rgba(255, 255, 255, 0.208);
+  backdrop-filter: blur(32px);
+  padding: 16px 12px;
+  color: white;
+  width: 240px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+
+.button-proper:hover {
+  background-color: rgb(234, 234, 234);
+}
+
 @media only screen and (max-width: 1199px) {
   h1 {
     font-size: 52px;
@@ -201,6 +255,11 @@ a {
     line-height: 52px;
   }
 
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   h4 {
     font-size: 18px;
     line-height: 42px;
@@ -216,46 +275,32 @@ a {
     line-height: 20px;
   }
 
+  li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .h4-2 {
     font-size: 18px;
     line-height: 42px;
   }
 
-  /* .tab-bar {
-    top: 20px;
-  }
-
-  .selected-tab {
-    padding: 6px 12px;
-    font-size: 16px;
-  }
-
-  .unselected-tab {
-    padding: 6px 12px;
-    font-size: 16px;
-  }
-
-  .links {
-    padding: 4px 2px;
-    top: 20px;
-    right: 20px;
-  } */
-
-  /* .link {
-    padding: 2px 4px;
-    font-size: 16px;
-  } */
 }
 
 @media only screen and (max-width: 991px) {
   h1 {
     font-size: 52px;
-    line-height: 66px;
+    line-height: 64px;
   }
 
   h2 {
-    font-size: 30px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
   }
 
   h4 {
@@ -273,36 +318,15 @@ a {
     line-height: 20px;
   }
 
+  li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .h4-2 {
     font-size: 18px;
     line-height: 42px;
   }
-
-  /* 
-  .tab-bar {
-    top: 16px;
-  }
-
-  .selected-tab {
-    padding: 6px 12px;
-    font-size: 16px;
-  }
-
-  .unselected-tab {
-    padding: 6px 12px;
-    font-size: 16px;
-  }
-
-  .links {
-    padding: 4px 2px;
-    top: 16px;
-    right: 16px;
-  }
-
-  .link {
-    padding: 2px 4px;
-    font-size: 16px;
-  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -313,14 +337,18 @@ a {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 52px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
   }
 
   h4 {
     font-size: 20px;
     line-height: 32px;
-    text-align: center;
   }
 
   p {
@@ -333,35 +361,15 @@ a {
     line-height: 18px;
   }
 
-  .h4-2 {
+  li {
     font-size: 16px;
     line-height: 24px;
   }
 
-  /* .tab-bar {
-    top: 32px;
-    left: 24%;
-    padding: 8px;
-  }
-
-  .selected-tab {
+  .h4-2 {
     font-size: 16px;
+    line-height: 24px;
   }
-
-  .unselected-tab {
-    font-size: 16px;
-  }
-
-  .links {
-    padding: 4px 2px;
-    top: 38px;
-    right: 4%;
-  }
-
-  .link {
-    padding: 2px 4px;
-    font-size: 16px;
-  } */
 }
 
 @media only screen and (max-width: 480px) {
@@ -375,6 +383,11 @@ a {
     line-height: 36px;
   }
 
+  h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   h4 {
     font-size: 16px;
     line-height: 28px;
@@ -385,40 +398,20 @@ a {
     line-height: 22px;
   }
 
+  li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
   .p-2 {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 17px;
   }
 
   .h4-2 {
     font-size: 14px;
     line-height: 20px;
   }
-
-  /* .tab-bar {
-    top: 24px;
-    left: 50%;
-    padding: 8px;
-  }
-
-  .selected-tab {
-    font-size: 14px;
-  }
-
-  .unselected-tab {
-    font-size: 14px;
-  }
-
-  .links {
-    padding: 2px 1px;
-    top: 28px;
-    right: 2%;
-  }
-
-  .link {
-    padding: 1px 2px;
-    font-size: 14px;
-  } */
 }
 
 @media only screen and (max-width: 320px) {
@@ -447,33 +440,13 @@ a {
     line-height: 14px;
   }
 
+  li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .h4-2 {
     font-size: 12px;
     line-height: 18px;
   }
-
-  /* .tab-bar {
-    top: 20px;
-    left: 18%;
-    padding: 8px;
-  }
-
-  .selected-tab {
-    font-size: 12px;
-  }
-
-  .unselected-tab {
-    font-size: 12px;
-  }
-
-  .links {
-    padding: 2px 1px;
-    top: 24px;
-    right: 2%;
-  }
-
-  .link {
-    padding: 1px 2px;
-    font-size: 12px;
-  } */
 }

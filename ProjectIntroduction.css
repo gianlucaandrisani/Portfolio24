@@ -1,0 +1,222 @@
+.Project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    margin-top: 8%;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.project-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.CoverTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.CoverTop>img {
+    width: 100%;
+    margin: auto;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.wrapper {
+    padding: 16px;
+    animation: fadeInUp 1.2s ease-out both;
+    /* border-radius: 56px;
+    background-color: #171615;
+    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04);
+    transition: all 0.3s;
+    height: fit-content;*/
+}
+
+.project-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 60px 60px 60px;
+    /* border-radius: 40px;
+    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04);
+    background: #1A1918;
+    box-shadow: 0px 0px 32px #00000008; */
+}
+
+.snapshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 32px;
+}
+
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.Snapshot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.snapshot-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+@media (max-width: 1199px) {
+    .Project-header {
+        margin-top: 6%;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        padding: 30px 40px 40px 40px;
+    }
+
+    .snapshot-wrapper,
+    .details-wrapper {
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .CoverTop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        width: 90%;
+        margin-top: 64px;
+    }
+
+    .Project-header {
+        margin-top: 5%;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        padding: 20px 30px 30px 30px;
+    }
+
+    .snapshot-wrapper {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .details-wrapper {
+        width: 100%;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Project-header {
+        margin-top: 4%;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        padding: 15px 20px 20px 20px;
+    }
+
+    .snapshot-wrapper,
+    .details-wrapper {
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .CoverTop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        width: 90%;
+        margin-top: 64px;
+    }
+
+    .Project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .snapshot-wrapper {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .details-wrapper {
+        width: 100%;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    .snapshot-details {
+        gap: 8px;
+    }
+
+    .wrapper {
+        padding: 0px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .Project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2%;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        padding: 8px 10px 10px 10px;
+    }
+
+    .snapshot-wrapper,
+    .details-wrapper {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .wrapper {
+        padding: 4px;
+    }
+}

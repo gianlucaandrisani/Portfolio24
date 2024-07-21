@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Matching</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="Global.css" />
+    <link rel="stylesheet" href="ProjectContent.css" />
+    <link rel="stylesheet" href="ProjectGlobal.css" />
+    <link rel="stylesheet" href="ProjectIntroduction.css" />
+    <link rel="stylesheet" href="ProjectOverview.css" />
+    <link rel="stylesheet" href="Footer.css" />
+  </head>
+
+  <body>
+    <div class="WholeContainer">
+      
+      <a href="index.html" class="back-button">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 2.99996L2 7.99996M2 7.99996L7 13M2 7.99996H14"
+            stroke="#9B9B9B"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+
+      <div class="CoverTop">
+        <div class="Project-header">
+          <div class="project-titles">
+            <h1>CodeGen platform</h1>
+            <h4>Component matching platform</h4>
+          </div>
+          <h4>Skippr, April 2024</h4>
+        </div>
+        <img src="component-matching.png" alt="" />
+      </div>
+
+      <div class="Content">
+
+        <!--Intro-->
+
+        <div class="wrapper">
+          <div class="project-overview">
+            <div class="snapshot-wrapper">
+              <div class="Snapshot">
+
+                <h4 class="h4-2">Background</h2>
+
+                <p class="p">
+                    Athena is a platform designed to match design components from Figma with code components. 
+                    The main challenge lies in the system's automatic matching confidence levels, which can 
+                    often be low. This low confidence doesn't necessarily reflect the accuracy of the matches 
+                    but can lead to user confusion and misinterpretation of the system's capabilities.
+                </p>
+
+              </div>
+
+              <div class="Snapshot">
+
+                <h4 class="h4-2">Problem</h4>
+
+                <p class="p">
+                    To allow users to make informed decisions, we needed to grant them more control over the matching table and individual items. 
+                    The static confidence score element was confusing for users because it didn't update when they reviewed and corrected matches. 
+                    This led to discrepancies and misunderstandings about the system's performance and the correctness of the matches.
+                </p>
+
+              </div>
+
+              <div class="Snapshot">
+                  <h4 class="h4-2">Solution</h2>
+
+                <p class="p">
+                    We redesigned the matching table and user interaction flow to enhance clarity and usability. 
+                    The new design separates low-confidence matches and provides clear messaging to guide users through the process. 
+                    These changes aim to improve the user experience and ensure that the users are guided correctly through the matching process.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="details-wrapper">
+              <div class="snapshot-details">
+                <h4 class="h4-2">Responsibilities</h4>
+                <p class="p">Product Designer</p>
+              </div>
+
+              <div class="snapshot-details">
+                <h4 class="h4-2">Timeline and process</h4>
+                <p class="p">2 months, pushed in June</p>
+              </div>
+
+              <div class="snapshot-details">
+                <h4 class="h4-2">Team</h4>
+                <p class="p">Me, Andrew Mudrov (Full Stack Engineer), Ben Brouckaert (Head of Design), Vladimir Savin (Principal Software Engineer), Natalia Tarasova (ML Engineer)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Highlights-->
+
+        <!--Design Principles-->
+
+        <div class="design-principles">
+          <div class="principles-intro">
+              <div class="highlights-title">
+                <h2>Identified Issues</h2>
+              </div>
+
+                <p>
+                    This step was crucial, as it sought human input and confirmation
+                    before generating results, ensuring responsibility and ownership r
+                    emained with the engineer.
+                </p>     
+
+          </div>
+
+          <div class="principles">
+
+            <div class="showcase-title">
+              <img src="decision-making.svg" alt="">
+              <h4>Decision making</h4>
+            </div>
+
+            <div class="showcase-title">
+              <img src="control-icon.svg" alt="">
+              <h4>Control</h4>
+            </div>
+
+            <div class="showcase-title">
+              <img src="guidance.svg" alt="">
+              <h4>Guidance</h4>
+            </div>
+
+            <div class="showcase-title">
+              <img src="flexibility.svg" alt="">
+              <h4>Flexibility</h4>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--Principles showcase-->
+
+        <div class="showcase-wrapper">
+            <div class="showcase">
+              <div class="showcase-title">
+                <img src="decision-making.svg" alt="">
+                <h4>Decision making</h4>
+              </div>
+              <p>
+                Previously, users could only match components, which limited their control over the quality of the generated code. 
+                This lack of interaction meant that potential errors or mismatches could go unnoticed, 
+                affecting the overall reliability and accuracy of the code generation.
+              </p>
+              <img src="decision-1.png" alt="">
+              <p>
+                To address this, I introduced the ability for users to select and then mark components as reviewed 
+                or delete them from the table. This enhancement allowed users to verify and confirm 
+                each match, ensuring that only accurate and correctly matched components were 
+                integrated into their projects
+              </p>
+              <img src="decision-4.png" alt="">
+              <img src="decision-5.png" alt="">
+              <img src="decision-2.png" alt="">
+              <img src="decision-3.png" alt="">
+            </div>
+          </div>    
+
+        <div class="showcase-wrapper">
+          <div class="showcase">
+            <div class="showcase-title">
+              <img src="control-icon.svg" alt="">
+              <h4>Control</h4>
+            </div>
+            <p>
+                Users needed more control over the table and individual items to make informed decisions. 
+                The static confidence score element was confusing as it didn't change after user corrections, 
+                creating discrepancies and misunderstanding. 
+
+                Also, the static score, was not effective because users 
+                couldn't see the impact of their reviews and corrections.
+            </p>
+            <img src="control-previous.png" alt="">
+            <p>
+                We introduced a new tab for low-confidence matches, helping users focus on the most critical items first and 
+                removed the static confidence score dot to reduce confusion 
+                and ensure users understand the impact of their actions on the matching process.
+            </p>
+            <img src="control-improved.png" alt="">
+          </div>
+        </div>
+
+        <div class="showcase-wrapper">
+          <div class="showcase">
+            <div class="showcase-title">
+              <img src="guidance.svg" alt="">
+              <h4>Guidance</h4>
+            </div>
+            <p>
+                During the onboarding, no tabs would be show and the process of matching components was even crucial and complex. 
+                It was necessary to ensure users were guided correctly to benefit fully from this step.
+            </p>
+            <img src="guidance-1.png" alt="">
+            <p>
+                Included a dedicated banner for guidance and clear messaging about the system's limitations 
+                and the need for user review to improve code generation quality.
+            </p>
+            <img src="guidance-2.png" alt="">
+          </div>
+        </div>  
+
+        <div class="showcase-wrapper">
+          <div class="showcase">
+            <div class="showcase-title">
+              <img src="flexibility.svg" alt="">
+              <h4>Flexibility</h4>
+            </div>
+            <p>
+                In this new version of the platform, we aimed to make the system more 
+                flexible to accommodate changes in various design systems over time. 
+                We enabled users to add new matches available in both code and design, 
+                or delete components that didn't yet have a corresponding match on the 
+                other side. This approach ensures that the system remains adaptable and 
+                aligned with evolving design and development needs.
+            </p>
+            <img src="flexible-1.png" alt="">
+            <img src="flexible-2.png" alt="">
+            <img src="flexible-3.png" alt="">
+            <img src="flexible-4.png" alt="">
+            <img src="flexible-5.png" alt="">
+            <img src="flexible-6.png" alt="">
+          </div>
+        </div>   
+
+        <!--Explorations-->
+
+        <div class="showcase-wrapper">
+          <div class="showcase">
+            <div class="showcase-title">
+              <img src="explorations.svg" alt="">
+              <h4>Explorations</h4>
+            </div>
+            <p>
+                During the design explorations, I initially explored a progress 
+                bar to track the review of component matches. However, it proved 
+                confusing, as it didn't accurately reflect the dynamic nature of the 
+                review process. Users would have misunderstood the system's state and required 
+                actions. We removed the progress bar and introduced features for 
+                marking components as reviewed or deleting them from the table, 
+                providing a more intuitive way for users to manage their workflow.
+            </p>
+            <img src="matchin-explore-1.png" alt="">
+          </div>
+        </div>
+
+        <!--Challenges-->
+
+        <div class="discovery">
+          <div class="highlights-title">
+            <h2>Challenges</h2>
+          </div>
+            <ul>
+                <li>
+                    <b>Complex Technical Requirements:</b> The technical specifications for 
+                    the component matching system were highly intricate. Balancing 
+                    the need for flexibility with the requirement for accuracy in 
+                    matching components required constant iteration and refinement.
+                </li>
+                <br></br>
+                <li>
+                    <b>Abstract User Input Value:</b>  Communicating the importance of user 
+                    input and feedback in the process was challenging. Users needed to 
+                    understand that their interactions were crucial for improving the system's 
+                    accuracy and reliability, but conveying this value in a clear and motivating 
+                    way required careful consideration and design.
+                </li>
+            </ul>
+        </div>
+
+      </div>
+
+  </body>
+</html>

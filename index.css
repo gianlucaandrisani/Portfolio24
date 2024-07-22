@@ -136,7 +136,6 @@ body {
     margin: auto;
     transition: all 0.2s;
     margin-top: 0;
-    border-radius: 16px;
 }
 
 .Project:hover>img {
@@ -205,10 +204,6 @@ body {
         height: 654px;
         gap: 8px;
     }
-
-    /* .Project>img {
-        margin-top: 8px;
-    } */
 
     .titles {
         gap: 8px;

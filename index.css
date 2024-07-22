@@ -74,9 +74,8 @@ body {
     padding: 16px;
     border-radius: 56px;
     background: linear-gradient(180deg, #171615 0%, #141312 92.04%);
-    /* box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04); */
     width: 100%;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
     transition: all 0.3s;
     position: relative;
     display: flex;
@@ -119,7 +118,6 @@ body {
 .Project {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background: linear-gradient(180deg, #1A1918 0%, #141312 100%);
     color: white;
     font-family: 'Inter', sans-serif;
@@ -135,7 +133,7 @@ body {
     width: 100%;
     margin: auto;
     transition: all 0.2s;
-    margin-top: 0;
+    margin: 0;
 }
 
 .Project:hover>img {
@@ -201,7 +199,6 @@ body {
 
     .Project {
         padding: 24px;
-        height: 654px;
         gap: 8px;
     }
 
@@ -248,7 +245,6 @@ body {
 
     .Project {
         padding: 24px;
-        height: 600px;
     }
 
     .titles {
@@ -325,7 +321,6 @@ body {
 
     .Project {
         padding: 22px;
-        height: 420px;
         gap: 16px;
         border-radius: 16px;
         align-self: center;
@@ -373,7 +368,6 @@ body {
         padding: 24px;
         gap: 16px;
         border-radius: 16px;
-        height: fit-content;
     }
 
     .text {
@@ -415,7 +409,6 @@ body {
 
     .Project {
         padding: 12px;
-        height: 240px;
         gap: 2px;
         border-radius: 8px;
     }

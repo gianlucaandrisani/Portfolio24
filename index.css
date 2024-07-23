@@ -71,9 +71,10 @@ body {
 }
 
 .outline {
-    padding: 16px;
-    border-radius: 56px;
-    background: linear-gradient(180deg, #171615 0%, #141312 92.04%);
+    padding: 12px;
+    border-radius: 72px;
+    /* background: linear-gradient(180deg, #171615 0%, #141312 92.04%); */
+    background: rgba(255, 255, 255, 0.010);
     width: 100%;
     margin-bottom: 8%;
     transition: all 0.3s;
@@ -86,25 +87,19 @@ body {
 }
 
 .outline:hover {
-    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04), 0px 1px 20px #141312;
+    /* box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04), 0px 1px 20px #141312; */
 }
 
 .glow-up {
     background: radial-gradient(#ffffff4e 0%, #ffffff00 60%);
     height: 1px;
     width: 70%;
-    left: 15%;
-    right: 15%;
     top: 0;
     position: absolute;
 }
 
 .outline:hover .glow-up {
     background: radial-gradient(#ffffff89 0%, #ffffff00 60%);
-}
-
-.outline:hover .glow-down {
-    background: radial-gradient(#ffffff 0%, #ffffff00 60%);
 }
 
 .glow-down {
@@ -115,18 +110,27 @@ body {
     position: relative;
 }
 
+.outline:hover .glow-down {
+    background: radial-gradient(#ffffff 0%, #ffffff00 60%);
+}
+
 .Project {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #1A1918 0%, #141312 100%);
+    /* background: linear-gradient(180deg, #1A1918 0%, #141312 100%); */
+    background: #1b1a18;
     color: white;
     font-family: 'Inter', sans-serif;
-    padding: 32px 40px;
-    border-radius: 40px;
+    padding: 64px;
+    border-radius: 64px;
     transition: all 0.2s;
-    gap: 24px;
+    gap: 32px;
     animation: fadeInUp 1.3s ease-out both;
-    box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04), 0px 1px 20px #141312;
+    /* box-shadow: -1px 0px 1px rgba(255, 255, 255, 0.04), 0px -1px 1px rgba(255, 255, 255, 0.04), 1px 0px 1px rgba(255, 255, 255, 0.04), 0px 1px 20px #141312; */
+}
+
+.Project:hover {
+    background: #1f1e1c;
 }
 
 .Project>img {
@@ -137,7 +141,7 @@ body {
 }
 
 .Project:hover>img {
-    transform: scale(1.005);
+    transform: scale(1.012);
     box-shadow: 0px 4px 16px 3px #ffffff04;
 }
 
@@ -194,12 +198,14 @@ body {
     }
 
     .outline {
-        padding: 12px;
+        padding: 8px;
+        border-radius: 60px;
     }
 
     .Project {
-        padding: 24px;
+        padding: 40px;
         gap: 8px;
+        border-radius: 52px;
     }
 
     .titles {
@@ -240,11 +246,12 @@ body {
     }
 
     .outline {
-        margin-bottom: 10%;
+        border-radius: 52px;
     }
 
     .Project {
-        padding: 24px;
+        padding: 32px;
+        border-radius: 44px;
     }
 
     .titles {
@@ -314,15 +321,13 @@ body {
     }
 
     .outline {
-        padding: 12px;
-        border-radius: 28px;
-        margin-bottom: 40%;
+        border-radius: 32px;
     }
 
     .Project {
-        padding: 22px;
+        padding: 24px;
         gap: 16px;
-        border-radius: 16px;
+        border-radius: 24px;
         align-self: center;
     }
 
@@ -361,13 +366,13 @@ body {
 
     .outline {
         padding: 8px;
-        border-radius: 20px;
+        border-radius: 32px;
     }
 
     .Project {
         padding: 24px;
         gap: 16px;
-        border-radius: 16px;
+        border-radius: 24px;
     }
 
     .text {
@@ -402,15 +407,14 @@ body {
     }
 
     .outline {
-        padding: 6px;
-        border-radius: 16px;
-        margin-bottom: 20%;
+        padding: 8px;
+        border-radius: 24px;
     }
 
     .Project {
-        padding: 12px;
+        padding: 16px;
         gap: 2px;
-        border-radius: 8px;
+        border-radius: 16px;
     }
 
     .titles>h2 {

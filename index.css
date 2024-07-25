@@ -91,7 +91,7 @@ body {
 }
 
 .glow-up {
-    background: radial-gradient(#ffffff4e 0%, #ffffff00 60%);
+    background: radial-gradient(#ffffff4e 0%, #ffffff00 40%);
     height: 1px;
     width: 70%;
     top: 0;
@@ -99,11 +99,11 @@ body {
 }
 
 .outline:hover .glow-up {
-    background: radial-gradient(#ffffff89 0%, #ffffff00 60%);
+    background: radial-gradient(#ffffff89 0%, #ffffff00 50%);
 }
 
 .glow-down {
-    background: radial-gradient(#ffffff7c 0%, #ffffff00 60%);
+    background: radial-gradient(#ffffff7c 0%, #ffffff00 40%);
     height: 1px;
     width: 90%;
     margin: auto;
@@ -111,7 +111,7 @@ body {
 }
 
 .outline:hover .glow-down {
-    background: radial-gradient(#ffffff 0%, #ffffff00 60%);
+    background: radial-gradient(#ffffff 0%, #ffffff00 50%);
 }
 
 .Project {

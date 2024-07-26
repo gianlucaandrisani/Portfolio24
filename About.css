@@ -2,154 +2,99 @@
 
 
 body {
-    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    margin: 0;
-    color: white;
-    font-family: Poppins;
-}
-
-.BackButton {
-    position: absolute;
-    height: 100%;
-    top: 60px;
-    left: 150px;
-}
-
-.BackButton>a>img {
-    position: fixed;
 }
 
 .WholeContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* width: 1200px; */
-    width: 65%;
-    margin-top: 60px;
-    margin-bottom: 200px;
-}
-
-.Me {
-    display: flex;
-    flex-direction: column;
-    align-items: top;
     width: 100%;
-    margin-right: 5%;
-    position: relative;
-}
-
-.Me>img {
-    width: 100%;
-    position: absolute;
-    top: -550px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .Content {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     text-align: left;
-}
-
-h1 {
-    font-size: 62px;
-    font-weight: 600;
-    margin: initial;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: 500;
-    color: #9D9D9D;
-    text-align: left;
-}
-
-p {
-    font-size: 22px;
+    width: 40%;
+    margin: auto;
 }
 
 /* ______________________________________________________________________________________________________________________________________________________________ */
 
 
-
-@media (min-width: 525px) and (max-width: 1024px) {
-
+@media (max-width: 1199px) {
     .WholeContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        /* width: 1200px; */
-        width: 65%;
-        margin-top: 60px;
-        margin-bottom: 200px;
-    }
-    
-    .Me {
-        display: flex;
-        flex-direction: row;
-        align-items: top;
-        width: 100%;
-        margin-right: 5%;
-    }
-    
-    .Me>img {
-        width: 100%;
-    }
-
-    .BackButton {
-        position: absolute;
-        height: 100%;
-        top: 50px;
-        left: 20px;
-    }
-
-    .BackButton>a>img {
-        position: fixed;
-    }
-   
-
-}
-
-/* ______________________________________________________________________________________________________________________________________________________________ */
-
-@media (min-width: 250px) and (max-width: 525px) {
-
-
-    .WholeContainer {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        /* width: 1200px; */
         width: 90%;
+        margin-top: 16%;
+        margin-bottom: 16%;
     }
-    
-    .Me {
-        display: flex;
+
+    .Content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .WholeContainer {
         flex-direction: column;
-        align-items: top;
-        width: 0%;
-        margin-right: 5%;
-    }
-    
-    .Me>img {
-        width: 0%;
+        width: 90%;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
 
+    .Content {
+        width: 70%;
+    }
+}
 
-    .BackButton {
-        position: absolute;
-        height: 100%;
-        top: 20px;
-        left: 20px;
+@media (max-width: 768px) {
+    .WholeContainer {
+        flex-direction: column;
+        width: 95%;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
 
-    .BackButton>a>img {
-        position: static;
+    .Content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .WholeContainer {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30%;
+        margin-bottom: 30%;
     }
 
+    .Content {
+        width: 90%;
+        text-align: left;
+        align-items: left;
+    }
+}
+
+@media (max-width: 320px) {
+    .WholeContainer {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40%;
+        margin-bottom: 30%;
+    }
+
+    .Content {
+        width: 95%;
+        text-align: left;
+        align-items: left;
+    }
 }

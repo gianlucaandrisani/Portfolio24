@@ -39,6 +39,7 @@ h2 {
   font-weight: 400;
   line-height: 68px;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
@@ -267,6 +268,11 @@ a {
     line-height: 52px;
   }
 
+  .h2-special {
+    font-size: 28px;
+    line-height: 60px;
+  }
+
   h3 {
     font-size: 24px;
     line-height: 36px;
@@ -308,6 +314,11 @@ a {
   h2 {
     font-size: 32px;
     line-height: 44px;
+  }
+
+  .h2-special {
+    font-size: 24px;
+    line-height: 54px;
   }
 
   h3 {
@@ -353,6 +364,11 @@ a {
     line-height: 52px;
   }
 
+  .h2-special {
+    font-size: 20px;
+    line-height: 48px;
+  }
+
   h3 {
     font-size: 24px;
     line-height: 36px;
@@ -395,6 +411,11 @@ a {
     line-height: 36px;
   }
 
+  .h2-special {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
   h3 {
     font-size: 20px;
     line-height: 32px;
@@ -435,6 +456,11 @@ a {
   h2 {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .h2-special {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   h4 {

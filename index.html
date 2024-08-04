@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.png" />
     <link rel="stylesheet" href="styling/global/Global.css" />
     <link rel="stylesheet" href="styling/index/index.css" />
+    <link rel="stylesheet" href="styling/about/About.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,21 +22,15 @@
     <div class="navigation">
 
         <div class="tab-bar">
-          <a>
-          <div class="selected-tab">
+          <div class="selected-tab" id="work-navigator">
             Work
           </div>
-        </a>
-        <a href="Code.html">
-          <div class="unselected-tab">
+          <div class="unselected-tab" id="code-navigator">
             Projects
           </div>
-        </a>
-        <a href="About.html">
-          <div class="unselected-tab">
+          <div class="unselected-tab" id="about-navigator">
             About
           </div>
-        </a>
         </div>
 
 
@@ -65,101 +60,246 @@
 
     </div>
 
-    <div class="Introduction">
-      <div class="outline-intro">
-        <div class="intro-content">
-          <div class="intro-titles">         
-            <h2 class="h2-special">
-              Hi, I’m Gianluca Andrisani, Junior Product Designer 
-            </h2>
-            <h1 tabindex="2">
-              I love blending <span class="h1-highlight-italic">design</span> and <span class="h1-highlight-italic">technology</span> together to create seamless and engaging experiences.
-            </h1>
+    <div id="work">
+      <div class="Introduction">
+        <div class="outline-intro">
+          <div class="intro-content">
+            <div class="intro-titles">         
+              <h2 class="h2-special">
+                Hi, I’m Gianluca Andrisani, Junior Product Designer & Coder
+              </h2>
+              <h1 tabindex="2">
+                I love blending <span class="h1-highlight-italic">design</span> and <span class="h1-highlight-italic">technology</span> together to create seamless and engaging experiences.
+              </h1>
+            </div>
+            <div class="scroll-cta" tabindex="3">
+            <p>
+              Scroll to see my work
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24" fill="none">
+              <path d="M20 13.5L12.5 21M12.5 21L5 13.5M12.5 21V3" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-          <div class="scroll-cta" tabindex="3">
-          <p>
-            Scroll to see my work
-          </p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24" fill="none">
-            <path d="M20 13.5L12.5 21M12.5 21L5 13.5M12.5 21V3" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          </div>
         </div>
+      </div>
+
+      <div id="ProjectsContainer" tabindex="4">
+
+        <!-- Component Matching Dashboard + Onboarding  -->
+        <div class="outline">
+          <div class="glow-up"></div>
+          <div class="glow-down"></div>
+          <a href="ComponentMatching.html" tabindex="5">
+            <div class="Project">
+              <img src="assets/covers/component-matching.png" alt="" href="" />
+              <div class="text">
+                <div class="top">
+                  <div class="titles">
+                    <h2>CodeGen platform</h2>
+                    <h4>Skippr • Product Design, 2024</h4>
+                  </div>
+                </div>
+                <p>
+                  CodeGen is a platform that allows users to seamlessly match design components 
+                  with code components, streamlining the development process and 
+                  ensuring consistency between design and implementation.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="outline">
+          <div class="glow-up"></div>
+          <div class="glow-down"></div>
+          <a href="Athena.html" tabindex="5">
+            <div class="Project">
+              <img src="assets/covers/athenaForDevs.png" alt="" href="" />
+              <div class="text">
+                <div class="top">
+                  <div class="titles">
+                    <h2>Athena for developers</h2>
+                    <h4>Skippr • Product Design, 2024</h4>
+                  </div>
+                </div>
+                <p>
+                  Athena is a VSCode extension that seamlessly integrates code generation from Figma designs, offers unit and accessibility tests, 
+                  and aligns with developers' workflows for a streamlined coding experience.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="outline">
+          <div class="glow-up"></div>
+          <div class="glow-down"></div>
+          <a href="Appetite.html" tabindex="5">
+            <div class="Project">
+              <img src="assets/covers/appetite-cover.png" alt="" href="" />
+              <div class="text">
+                <div class="top">
+                  <div class="titles">
+                    <h2>Dine with friends</h2>
+                    <h4>Appetite • Product Design, 2023</h4>
+                  </div>
+                </div>
+                <p>
+                  Appetite makes it easy to discover new dining spots, 
+                  organize outings with friends, and save favorite 
+                  places in your lists.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="code">
+
+      <div class="Introduction">
+        <div class="outline-intro">
+          <div class="intro-content">
+            <div class="intro-titles">         
+              <h2 class="h2-special">
+                Gianluca Andrisani
+              </h2>
+              <h1 tabindex="2">
+                My love for <span class="h1-highlight-italic">design</span> and technology naturally led me to <span class="h1-highlight-italic">coding</span>
+              </h1>
+            </div>
+            <div class="scroll-cta" tabindex="3">
+            <p>
+              Scroll to see my work
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24" fill="none">
+              <path d="M20 13.5L12.5 21M12.5 21L5 13.5M12.5 21V3" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="ProjectsContainer">
+        
+        <div class="outline">
+          <div class="glow-up"></div>
+          <div class="glow-down"></div>
+          <a href="TaskManager.html" tabindex="5">
+            <div class="Project">
+              <img src="assets/covers/taskManager.png" alt="" href="" />
+              <div class="text">
+                <div class="top">
+                  <div class="titles">
+                    <h2>Task manager</h2>
+                    <h4>Product Design -> Frontend Engineering, 2024</h4>
+                  </div>
+                </div>
+                <p>
+                  Developed a small personal task manager app.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="outline">
+          <div class="glow-up"></div>
+          <div class="glow-down"></div>
+          <a href="todo.html" tabindex="5">
+            <div class="Project">
+              <img src="assets/covers/todo-app.png" alt="" href="" />
+              <div class="text">
+                <div class="top">
+                  <div class="titles">
+                    <h2>To do</h2>
+                    <h4>Product Design -> Frontend Engineering, 2024</h4>
+                  </div>
+                </div>
+                <p>
+                  Developed a small to-do app, where users can create multiple lists.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <div id="about">
+      <div class="WholeContainer">
+        <div class="Content">
+            <h4>Gianluca Andrisani</h1>
+            <p>
+              I'm a product designer with a deep passion for design and technology, 
+              dedicated to delivering value through unique experiences. My love for 
+              design began at 15 when I started my graphic fashion brand, <a href="https://www.instagram.com/fckmstudio/"><u>Fuck 'em.</u></a> 
+              Since then, my life has revolved around exploring design through various mediums.
+            </p>
+            </br>
+            <p>
+              My fascination with technology has been strong since childhood, leading 
+              me to explore innovative solutions and teach myself to code. I'm constantly 
+              striving to improve, learn something new, expand my perspectives, and challenge my ideas.
+            </p>
+            </br>
+            <p>
+              Currently, I'm focused on enhancing my design skills, particularly in UI and problem-solving, 
+              while also working on becoming a better programmer. I'm reading <i>"JavaScript: The Definitive Guide"</i> 
+              to deepen my understanding of this powerful programming language.
+            </p>
+            </br>
+            <p>
+              When I'm not designing or coding, you'll likely find me traveling to new countries, reading, 
+              cycling, or researching music.
+            </p>
+
+            </br>
+            </br>
+            </br>
+            </br>
+
+            <h4>Latest Reads</h4>
+            <p>
+              <a href="https://www.amazon.co.uk/Creative-Selection-Ken-Kocienda/dp/1250194466">
+                Creative Selection, Inside Apple's Design Process During the Golden Years of Steve Jobs - Ken Kocienda
+              </a>
+            </p>
+            </br>
+            <p>
+              <a href="https://www.amazon.co.uk/Feynmans-Rainbow-Search-Beauty-Physics/dp/0307946495">
+                Feynman's Rainbow: A Search for Beauty in Physics and in Life - Leonard Mlodinow 
+              </a> 
+            </p>
+            </br>
+            <p>
+              <a href="https://www.amazon.co.uk/Insanely-Great-Macintosh-Computer-Everything/dp/0140291776">
+                Insanely Great: The Life And Times of Macintosh, the Computer That Changed Everything - Steven Levy
+              </a> 
+            </p>
+            </br>
+            <p>
+              <a href="https://www.amazon.co.uk/Amore-liquido-Zygmunt-Bauman/dp/8842079642">
+                Amore Liquido -  Zygmunt Bauman
+              </a> 
+            </p>
+            </br>
+            <p>
+              <a href="https://www.amazon.co.uk/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713">
+                The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life - Mark Manson
+              </a> 
+            </p>
         </div>
       </div>
     </div>
 
-    <div id="ProjectsContainer" tabindex="4">
 
-      <!-- Component Matching Dashboard + Onboarding  -->
-      <div class="outline">
-        <div class="glow-up"></div>
-        <div class="glow-down"></div>
-        <a href="ComponentMatching.html" tabindex="5">
-          <div class="Project">
-            <img src="assets/covers/component-matching.png" alt="" href="" />
-            <div class="text">
-              <div class="top">
-                <div class="titles">
-                  <h2>CodeGen platform</h2>
-                  <h4>Skippr • Product Design, 2024</h4>
-                </div>
-              </div>
-              <p>
-                CodeGen is a platform that allows users to seamlessly match design components 
-                with code components, streamlining the development process and 
-                ensuring consistency between design and implementation.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="outline">
-        <div class="glow-up"></div>
-        <div class="glow-down"></div>
-        <a href="Athena.html" tabindex="5">
-          <div class="Project">
-            <img src="assets/covers/athenaForDevs.png" alt="" href="" />
-            <div class="text">
-              <div class="top">
-                <div class="titles">
-                  <h2>Athena for developers</h2>
-                  <h4>Skippr • Product Design, 2024</h4>
-                </div>
-              </div>
-              <p>
-                Athena is a VSCode extension that seamlessly integrates code generation from Figma designs, offers unit and accessibility tests, 
-                and aligns with developers' workflows for a streamlined coding experience.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="outline">
-        <div class="glow-up"></div>
-        <div class="glow-down"></div>
-        <a href="Appetite.html" tabindex="5">
-          <div class="Project">
-            <img src="assets/covers/appetite-cover.png" alt="" href="" />
-            <div class="text">
-              <div class="top">
-                <div class="titles">
-                  <h2>Dine with friends</h2>
-                  <h4>Appetite • Product Design, 2023</h4>
-                </div>
-              </div>
-              <p>
-                Appetite makes it easy to discover new dining spots, 
-                organize outings with friends, and save favorite 
-                places in your lists.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
+    <script src="scripts/navigator.js"></script>
     <script src="scripts/dropdown.js"></script>
   </body>
 </html>
